@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B1E5F4E21227DF900505634 /* TTTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E5F4D21227DF900505634 /* TTTLoginViewController.m */; };
+		9B1E5F5121227E0400505634 /* TTTAudioChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E5F5021227E0400505634 /* TTTAudioChatViewController.m */; };
+		9B1E5F5421227E9300505634 /* TTTAVRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1E5F5321227E9300505634 /* TTTAVRegion.m */; };
+		9B1E5F5621227EAF00505634 /* TTTAVRegion.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1E5F5521227EAF00505634 /* TTTAVRegion.xib */; };
+		9B3176F72122C6CA003DB8E3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3176F62122C6CA003DB8E3 /* libiconv.tbd */; };
+		9B57CA522121871000FF9F6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57CA512121871000FF9F6E /* AppDelegate.m */; };
+		9B57CA582121871000FF9F6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B57CA562121871000FF9F6E /* Main.storyboard */; };
+		9B57CA5A2121871100FF9F6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B57CA592121871100FF9F6E /* Assets.xcassets */; };
+		9B57CA5D2121871100FF9F6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B57CA5B2121871100FF9F6E /* LaunchScreen.storyboard */; };
+		9B57CA602121871100FF9F6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57CA5F2121871100FF9F6E /* main.m */; };
+		9B57CA68212187FC00FF9F6E /* TTTRtcManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57CA67212187FC00FF9F6E /* TTTRtcManager.m */; };
+		9B57CA6B212188A700FF9F6E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B57CA6A212188A700FF9F6E /* SystemConfiguration.framework */; };
+		9B57CA6D212188AC00FF9F6E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B57CA6C212188AC00FF9F6E /* CoreTelephony.framework */; };
+		9B57CA6F212188B100FF9F6E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B57CA6E212188B100FF9F6E /* AVFoundation.framework */; };
+		9B57CA71212188B600FF9F6E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B57CA70212188B600FF9F6E /* AudioToolbox.framework */; };
+		9B57CA73212188BE00FF9F6E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B57CA72212188BE00FF9F6E /* libc++.tbd */; };
+		9B57CA75212188C700FF9F6E /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B57CA74212188C700FF9F6E /* libxml2.tbd */; };
+		9B57CA77212188D000FF9F6E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B57CA76212188D000FF9F6E /* libz.tbd */; };
+		9B57CA7E2121898800FF9F6E /* TTProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57CA7A2121898800FF9F6E /* TTProgressHud.m */; };
+		9B57CA7F2121898800FF9F6E /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57CA7D2121898800FF9F6E /* UIView+Toast.m */; };
+		9B57CA8221218AF100FF9F6E /* TTTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57CA8121218AF100FF9F6E /* TTTUser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9B1E5F4C21227DF900505634 /* TTTLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTLoginViewController.h; sourceTree = "<group>"; };
+		9B1E5F4D21227DF900505634 /* TTTLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTLoginViewController.m; sourceTree = "<group>"; };
+		9B1E5F4F21227E0400505634 /* TTTAudioChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTAudioChatViewController.h; sourceTree = "<group>"; };
+		9B1E5F5021227E0400505634 /* TTTAudioChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTAudioChatViewController.m; sourceTree = "<group>"; };
+		9B1E5F5221227E9300505634 /* TTTAVRegion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTAVRegion.h; sourceTree = "<group>"; };
+		9B1E5F5321227E9300505634 /* TTTAVRegion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTAVRegion.m; sourceTree = "<group>"; };
+		9B1E5F5521227EAF00505634 /* TTTAVRegion.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TTTAVRegion.xib; sourceTree = "<group>"; };
+		9B3176F62122C6CA003DB8E3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		9B57CA4D2121871000FF9F6E /* TTTAudioChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTAudioChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B57CA502121871000FF9F6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B57CA512121871000FF9F6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B57CA572121871000FF9F6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B57CA592121871100FF9F6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B57CA5C2121871100FF9F6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B57CA5E2121871100FF9F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B57CA5F2121871100FF9F6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B57CA66212187FC00FF9F6E /* TTTRtcManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTRtcManager.h; sourceTree = "<group>"; };
+		9B57CA67212187FC00FF9F6E /* TTTRtcManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTRtcManager.m; sourceTree = "<group>"; };
+		9B57CA6A212188A700FF9F6E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9B57CA6C212188AC00FF9F6E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9B57CA6E212188B100FF9F6E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9B57CA70212188B600FF9F6E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9B57CA72212188BE00FF9F6E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		9B57CA74212188C700FF9F6E /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		9B57CA76212188D000FF9F6E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9B57CA782121893300FF9F6E /* TTTAudioChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTTAudioChat-Prefix.pch"; sourceTree = "<group>"; };
+		9B57CA7A2121898800FF9F6E /* TTProgressHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTProgressHud.m; sourceTree = "<group>"; };
+		9B57CA7B2121898800FF9F6E /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		9B57CA7C2121898800FF9F6E /* TTProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTProgressHud.h; sourceTree = "<group>"; };
+		9B57CA7D2121898800FF9F6E /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		9B57CA8021218AF100FF9F6E /* TTTUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTUser.h; sourceTree = "<group>"; };
+		9B57CA8121218AF100FF9F6E /* TTTUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTUser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B57CA4A2121871000FF9F6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3176F72122C6CA003DB8E3 /* libiconv.tbd in Frameworks */,
+				9B57CA77212188D000FF9F6E /* libz.tbd in Frameworks */,
+				9B57CA75212188C700FF9F6E /* libxml2.tbd in Frameworks */,
+				9B57CA73212188BE00FF9F6E /* libc++.tbd in Frameworks */,
+				9B57CA71212188B600FF9F6E /* AudioToolbox.framework in Frameworks */,
+				9B57CA6F212188B100FF9F6E /* AVFoundation.framework in Frameworks */,
+				9B57CA6D212188AC00FF9F6E /* CoreTelephony.framework in Frameworks */,
+				9B57CA6B212188A700FF9F6E /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B57CA442121871000FF9F6E = {
+			isa = PBXGroup;
+			children = (
+				9B57CA4F2121871000FF9F6E /* TTTAudioChat */,
+				9B57CA4E2121871000FF9F6E /* Products */,
+				9B57CA69212188A600FF9F6E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B57CA4E2121871000FF9F6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B57CA4D2121871000FF9F6E /* TTTAudioChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B57CA4F2121871000FF9F6E /* TTTAudioChat */ = {
+			isa = PBXGroup;
+			children = (
+				9B57CA502121871000FF9F6E /* AppDelegate.h */,
+				9B57CA512121871000FF9F6E /* AppDelegate.m */,
+				9B1E5F4C21227DF900505634 /* TTTLoginViewController.h */,
+				9B1E5F4D21227DF900505634 /* TTTLoginViewController.m */,
+				9B1E5F4F21227E0400505634 /* TTTAudioChatViewController.h */,
+				9B1E5F5021227E0400505634 /* TTTAudioChatViewController.m */,
+				9B57CA66212187FC00FF9F6E /* TTTRtcManager.h */,
+				9B57CA67212187FC00FF9F6E /* TTTRtcManager.m */,
+				9B1E5F5221227E9300505634 /* TTTAVRegion.h */,
+				9B1E5F5321227E9300505634 /* TTTAVRegion.m */,
+				9B1E5F5521227EAF00505634 /* TTTAVRegion.xib */,
+				9B57CA8021218AF100FF9F6E /* TTTUser.h */,
+				9B57CA8121218AF100FF9F6E /* TTTUser.m */,
+				9B57CA792121898800FF9F6E /* TTHelper */,
+				9B57CA562121871000FF9F6E /* Main.storyboard */,
+				9B57CA592121871100FF9F6E /* Assets.xcassets */,
+				9B57CA5B2121871100FF9F6E /* LaunchScreen.storyboard */,
+				9B57CA782121893300FF9F6E /* TTTAudioChat-Prefix.pch */,
+				9B57CA5E2121871100FF9F6E /* Info.plist */,
+				9B57CA5F2121871100FF9F6E /* main.m */,
+			);
+			path = TTTAudioChat;
+			sourceTree = "<group>";
+		};
+		9B57CA69212188A600FF9F6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B3176F62122C6CA003DB8E3 /* libiconv.tbd */,
+				9B57CA76212188D000FF9F6E /* libz.tbd */,
+				9B57CA74212188C700FF9F6E /* libxml2.tbd */,
+				9B57CA72212188BE00FF9F6E /* libc++.tbd */,
+				9B57CA70212188B600FF9F6E /* AudioToolbox.framework */,
+				9B57CA6E212188B100FF9F6E /* AVFoundation.framework */,
+				9B57CA6C212188AC00FF9F6E /* CoreTelephony.framework */,
+				9B57CA6A212188A700FF9F6E /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B57CA792121898800FF9F6E /* TTHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9B57CA7A2121898800FF9F6E /* TTProgressHud.m */,
+				9B57CA7B2121898800FF9F6E /* UIView+Toast.h */,
+				9B57CA7C2121898800FF9F6E /* TTProgressHud.h */,
+				9B57CA7D2121898800FF9F6E /* UIView+Toast.m */,
+			);
+			path = TTHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B57CA4C2121871000FF9F6E /* TTTAudioChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B57CA632121871100FF9F6E /* Build configuration list for PBXNativeTarget "TTTAudioChat" */;
+			buildPhases = (
+				9B57CA492121871000FF9F6E /* Sources */,
+				9B57CA4A2121871000FF9F6E /* Frameworks */,
+				9B57CA4B2121871000FF9F6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTTAudioChat;
+			productName = TTTAudioChat;
+			productReference = 9B57CA4D2121871000FF9F6E /* TTTAudioChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B57CA452121871000FF9F6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = yanzhen;
+				TargetAttributes = {
+					9B57CA4C2121871000FF9F6E = {
+						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9B57CA482121871000FF9F6E /* Build configuration list for PBXProject "TTTAudioChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B57CA442121871000FF9F6E;
+			productRefGroup = 9B57CA4E2121871000FF9F6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B57CA4C2121871000FF9F6E /* TTTAudioChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B57CA4B2121871000FF9F6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B57CA5D2121871100FF9F6E /* LaunchScreen.storyboard in Resources */,
+				9B57CA5A2121871100FF9F6E /* Assets.xcassets in Resources */,
+				9B57CA582121871000FF9F6E /* Main.storyboard in Resources */,
+				9B1E5F5621227EAF00505634 /* TTTAVRegion.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B57CA492121871000FF9F6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B57CA7F2121898800FF9F6E /* UIView+Toast.m in Sources */,
+				9B1E5F4E21227DF900505634 /* TTTLoginViewController.m in Sources */,
+				9B57CA7E2121898800FF9F6E /* TTProgressHud.m in Sources */,
+				9B57CA602121871100FF9F6E /* main.m in Sources */,
+				9B1E5F5121227E0400505634 /* TTTAudioChatViewController.m in Sources */,
+				9B57CA68212187FC00FF9F6E /* TTTRtcManager.m in Sources */,
+				9B57CA8221218AF100FF9F6E /* TTTUser.m in Sources */,
+				9B57CA522121871000FF9F6E /* AppDelegate.m in Sources */,
+				9B1E5F5421227E9300505634 /* TTTAVRegion.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B57CA562121871000FF9F6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B57CA572121871000FF9F6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B57CA5B2121871100FF9F6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B57CA5C2121871100FF9F6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B57CA612121871100FF9F6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9B57CA622121871100FF9F6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B57CA642121871100FF9F6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SZ6BRJK5P;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../TTTLib";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TTTAudioChat/TTTAudioChat-Prefix.pch";
+				INFOPLIST_FILE = TTTAudioChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					TTTPlayerKit,
+					"-framework",
+					TTTRtcEngineVoiceKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.3ttech.TTTAudioChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B57CA652121871100FF9F6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SZ6BRJK5P;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../TTTLib";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TTTAudioChat/TTTAudioChat-Prefix.pch";
+				INFOPLIST_FILE = TTTAudioChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					TTTPlayerKit,
+					"-framework",
+					TTTRtcEngineVoiceKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.3ttech.TTTAudioChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B57CA482121871000FF9F6E /* Build configuration list for PBXProject "TTTAudioChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B57CA612121871100FF9F6E /* Debug */,
+				9B57CA622121871100FF9F6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B57CA632121871100FF9F6E /* Build configuration list for PBXNativeTarget "TTTAudioChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B57CA642121871100FF9F6E /* Debug */,
+				9B57CA652121871100FF9F6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B57CA452121871000FF9F6E /* Project object */;
+}
