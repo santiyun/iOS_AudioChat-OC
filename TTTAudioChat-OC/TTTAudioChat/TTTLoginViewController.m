@@ -22,16 +22,16 @@
     NSString *websitePrefix = @"http://www.3ttech.cn  version  ";
     _websiteLabel.text = [websitePrefix stringByAppendingString:TTTRtcEngineKit.getSdkVersion];
     _uid = arc4random() % 100000 + 1;
-    NSInteger roomID = [[NSUserDefaults standardUserDefaults] stringForKey:@"ENTERROOMID"].integerValue;
+    int64_t roomID = [[NSUserDefaults standardUserDefaults] stringForKey:@"ENTERROOMID"].longLongValue;
     if (roomID == 0) {
         roomID = arc4random() % 1000000 + 1;
     }
-    _roomIDTF.text = [NSString stringWithFormat:@"%zd", roomID];
+    _roomIDTF.text = [NSString stringWithFormat:@"%lld", roomID];
 }
 
 - (IBAction)enterChannel:(id)sender {
-    if (_roomIDTF.text.integerValue == 0) {
-        [self showToast:@"请输入正确的房间ID"];
+    if (_roomIDTF.text.integerValue == 0 || _roomIDTF.text.length >= 19) {
+        [self showToast:@"请输入19位以内的房间ID"];
         return;
     }
     [NSUserDefaults.standardUserDefaults setValue:_roomIDTF.text forKey:@"ENTERROOMID"];
