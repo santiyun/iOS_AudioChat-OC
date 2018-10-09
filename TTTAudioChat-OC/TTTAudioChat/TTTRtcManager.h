@@ -14,6 +14,7 @@
 @property (nonatomic, strong) TTTRtcEngineKit *rtcEngine;
 @property (nonatomic, strong) TTTUser *me;
 @property (nonatomic, assign) int64_t roomID;
+@property (nonatomic, assign) BOOL isHighQualityAudio;
 
 + (instancetype)manager;
 @end

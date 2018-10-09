@@ -28,6 +28,7 @@
 		9B57CA7E2121898800FF9F6E /* TTProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57CA7A2121898800FF9F6E /* TTProgressHud.m */; };
 		9B57CA7F2121898800FF9F6E /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57CA7D2121898800FF9F6E /* UIView+Toast.m */; };
 		9B57CA8221218AF100FF9F6E /* TTTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57CA8121218AF100FF9F6E /* TTTUser.m */; };
+		9BCB135D21479C1400DD0724 /* TTTSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCB135C21479C1400DD0724 /* TTTSettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,8 @@
 		9B57CA7D2121898800FF9F6E /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		9B57CA8021218AF100FF9F6E /* TTTUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTUser.h; sourceTree = "<group>"; };
 		9B57CA8121218AF100FF9F6E /* TTTUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTUser.m; sourceTree = "<group>"; };
+		9BCB135B21479C1400DD0724 /* TTTSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTSettingViewController.h; sourceTree = "<group>"; };
+		9BCB135C21479C1400DD0724 /* TTTSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTSettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		9B57CA4F2121871000FF9F6E /* TTTAudioChat */ = {
 			isa = PBXGroup;
 			children = (
+				9BCB135A21479BE300DD0724 /* Settings */,
 				9B57CA502121871000FF9F6E /* AppDelegate.h */,
 				9B57CA512121871000FF9F6E /* AppDelegate.m */,
 				9B1E5F4C21227DF900505634 /* TTTLoginViewController.h */,
@@ -152,6 +156,15 @@
 				9B57CA7D2121898800FF9F6E /* UIView+Toast.m */,
 			);
 			path = TTHelper;
+			sourceTree = "<group>";
+		};
+		9BCB135A21479BE300DD0724 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9BCB135B21479C1400DD0724 /* TTTSettingViewController.h */,
+				9BCB135C21479C1400DD0724 /* TTTSettingViewController.m */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BCB135D21479C1400DD0724 /* TTTSettingViewController.m in Sources */,
 				9B57CA7F2121898800FF9F6E /* UIView+Toast.m in Sources */,
 				9B1E5F4E21227DF900505634 /* TTTLoginViewController.m in Sources */,
 				9B57CA7E2121898800FF9F6E /* TTProgressHud.m in Sources */,

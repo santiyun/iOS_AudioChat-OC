@@ -45,7 +45,9 @@
     [TTManager.rtcEngine muteLocalAudioStream:NO];
     [TTManager.rtcEngine enableAudioVolumeIndication:200 smooth:3];
     //设置为高音质
-//    [TTManager.rtcEngine setHighQualityAudioParametersWithFullband:YES stereo:YES fullBitrate:YES];
+    if (TTManager.isHighQualityAudio) {
+        [TTManager.rtcEngine setHighQualityAudioParametersWithFullband:YES stereo:YES fullBitrate:YES];
+    }
     [TTManager.rtcEngine joinChannelByKey:nil channelName:_roomIDTF.text uid:_uid joinSuccess:nil];
 }
 
