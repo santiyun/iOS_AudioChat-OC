@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSString *websitePrefix = @"http://www.3ttech.cn  version  ";
+    NSString *websitePrefix = @"http://www.3ttech.cn ";
     _websiteLabel.text = [websitePrefix stringByAppendingString:TTTRtcEngineKit.getSdkVersion];
     _uid = arc4random() % 100000 + 1;
     int64_t roomID = [[NSUserDefaults standardUserDefaults] stringForKey:@"ENTERROOMID"].longLongValue;
