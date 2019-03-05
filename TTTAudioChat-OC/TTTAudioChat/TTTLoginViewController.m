@@ -57,6 +57,7 @@
 
 #pragma mark - TTTRtcEngineDelegate
 -(void)rtcEngine:(TTTRtcEngineKit *)engine didJoinChannel:(NSString *)channel withUid:(int64_t)uid elapsed:(NSInteger)elapsed {
+    [engine setEnableSpeakerphone:NO];
     [TTProgressHud hideHud:self.view];
     [self performSegueWithIdentifier:@"AudioChat" sender:nil];
 }
@@ -83,5 +84,4 @@
     [TTProgressHud hideHud:self.view];
     [self showToast:errorInfo];
 }
-
 @end

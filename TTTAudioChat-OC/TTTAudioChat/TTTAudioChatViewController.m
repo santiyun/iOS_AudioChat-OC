@@ -36,13 +36,6 @@
         }
     }
     TTManager.rtcEngine.delegate = self;
-    //加入房间会回调音频路由，默认是扬声器，这里不可能是听筒
-    if (!TTManager.rtcEngine.isSpeakerphoneEnabled) {
-        _routing = TTTRtc_AudioOutput_Headset;
-        _speakerBtn.enabled = NO;
-    } else {
-        _routing = TTTRtc_AudioOutput_Speaker;
-    }
 }
 
 - (IBAction)muteVocieAction:(UIButton *)sender {
@@ -65,6 +58,7 @@
     [alert addAction:sureAction];
     [self presentViewController:alert animated:YES completion:nil];
 }
+
 #pragma mark - TTTRtcEngineDelegate
 -(void)rtcEngine:(TTTRtcEngineKit *)engine didJoinedOfUid:(int64_t)uid clientRole:(TTTRtcClientRole)clientRole isVideoEnabled:(BOOL)isVideoEnabled elapsed:(NSInteger)elapsed {
     TTTUser *user = [[TTTUser alloc] initWith:uid];
@@ -108,46 +102,31 @@
 
 -(void)rtcEngine:(TTTRtcEngineKit *)engine didAudioRouteChanged:(TTTRtcAudioOutputRouting)routing {
     _routing = routing;
-    if (routing == TTTRtc_AudioOutput_Headset) {
-        _speakerBtn.selected = NO;
-        _speakerBtn.enabled = NO;
-    } else {
-        _speakerBtn.enabled = YES;
-    }
 }
 
 - (void)rtcEngineConnectionDidLost:(TTTRtcEngineKit *)engine {
-    [self.view.window showToast:@"ConnectionDidLost"];
+    [TTProgressHud showHud:self.view message:@"网络链接丢失，正在重连..."];
+}
+
+- (void)rtcEngineReconnectServerTimeout:(TTTRtcEngineKit *)engine {
+    [TTProgressHud hideHud:self.view];
+    [self.view.window showToast:@"网络丢失，请检查网络"];
     [engine leaveChannel:nil];
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)rtcEngineReconnectServerSucceed:(TTTRtcEngineKit *)engine {
+    [TTProgressHud hideHud:self.view];
 }
 
 - (void)rtcEngine:(TTTRtcEngineKit *)engine didKickedOutOfUid:(int64_t)uid reason:(TTTRtcKickedOutReason)reason {
     NSString *errorInfo = @"";
     switch (reason) {
-        case TTTRtc_KickedOut_KickedByHost:
-            errorInfo = @"被主播踢出";
-            break;
-        case TTTRtc_KickedOut_PushRtmpFailed:
-            errorInfo = @"rtmp推流失败";
-            break;
-        case TTTRtc_KickedOut_MasterExit:
-            errorInfo = @"主播已退出";
-            break;
         case TTTRtc_KickedOut_ReLogin:
             errorInfo = @"重复登录";
             break;
         case TTTRtc_KickedOut_NoAudioData:
             errorInfo = @"长时间没有上行音频数据";
-            break;
-        case TTTRtc_KickedOut_NoVideoData:
-            errorInfo = @"长时间没有上行视频数据";
-            break;
-        case TTTRtc_KickedOut_NewChairEnter:
-            errorInfo = @"其他人以主播身份进入";
-            break;
-        case TTTRtc_KickedOut_ChannelKeyExpired:
-            errorInfo = @"Channel Key失效";
             break;
         default:
             errorInfo = @"未知错误";
