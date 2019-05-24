@@ -43,11 +43,11 @@
     TTManager.rtcEngine.delegate = self;
     [TTManager.rtcEngine setChannelProfile:TTTRtc_ChannelProfile_Communication];
     [TTManager.rtcEngine muteLocalAudioStream:NO];
-    [TTManager.rtcEngine enableAudioVolumeIndication:200 smooth:3];
+    [TTManager.rtcEngine enableAudioVolumeIndication:1000 smooth:3];
     [TTManager.rtcEngine setEnableSpeakerphone:YES];
     //设置为高音质
     if (TTManager.isHighQualityAudio) {
-        [TTManager.rtcEngine setHighQualityAudioParametersWithFullband:YES stereo:YES fullBitrate:YES];
+        [TTManager.rtcEngine setPreferAudioCodec:TTTRtc_AudioCodec_AAC bitrate:96 channels:1];
     }
     [TTManager.rtcEngine joinChannelByKey:nil channelName:_roomIDTF.text uid:_uid joinSuccess:nil];
 }
@@ -58,7 +58,6 @@
 
 #pragma mark - TTTRtcEngineDelegate
 -(void)rtcEngine:(TTTRtcEngineKit *)engine didJoinChannel:(NSString *)channel withUid:(int64_t)uid elapsed:(NSInteger)elapsed {
-    [engine setEnableSpeakerphone:NO];
     [TTProgressHud hideHud:self.view];
     [self performSegueWithIdentifier:@"AudioChat" sender:nil];
 }

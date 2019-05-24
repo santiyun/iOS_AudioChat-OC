@@ -36,6 +36,11 @@
         }
     }
     TTManager.rtcEngine.delegate = self;
+    if (TTManager.rtcEngine.isSpeakerphoneEnabled) {
+        _routing = TTTRtc_AudioOutput_Speaker;
+    } else {
+        _routing = TTTRtc_AudioOutput_Headphone;
+    }
 }
 
 - (IBAction)muteVocieAction:(UIButton *)sender {
@@ -50,10 +55,12 @@
 }
 
 - (IBAction)exitChannel:(id)sender {
+    __weak TTTAudioChatViewController *weakSelf = self;
     UIAlertController *alert  = [UIAlertController alertControllerWithTitle:@"提示" message:@"您确定要退出房间吗？" preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
     UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [TTManager.rtcEngine leaveChannel:nil];
+        [weakSelf dismissViewControllerAnimated:YES completion:nil];
     }];
     [alert addAction:sureAction];
     [self presentViewController:alert animated:YES completion:nil];
@@ -133,6 +140,8 @@
             break;
     }
     [self.view.window showToast:errorInfo];
+    [engine leaveChannel:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - helper mehtod
