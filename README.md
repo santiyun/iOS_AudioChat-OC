@@ -1,4 +1,4 @@
-### 音频通话-Swift
+### 音频通话-OC
 
 #### 准备工作
 1. 在三体云官网SDK下载页 [http://3ttech.cn/index.php?menu=53](http://3ttech.cn/index.php?menu=53) 下载对应平台的 音频通话SDK。 放在**TTTLib**目录下
