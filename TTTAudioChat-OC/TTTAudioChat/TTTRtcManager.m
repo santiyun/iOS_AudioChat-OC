@@ -37,6 +37,7 @@ static id _manager;
 {
     self = [super init];
     if (self) {
+        //输入申请的AppId
         _rtcEngine = [TTTRtcEngineKit sharedEngineWithAppId:<#name#> delegate:nil];
         _me = [[TTTUser alloc] initWith:0];
     }

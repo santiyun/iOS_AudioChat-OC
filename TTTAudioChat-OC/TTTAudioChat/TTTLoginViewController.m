@@ -43,7 +43,7 @@
     TTManager.rtcEngine.delegate = self;
     [TTManager.rtcEngine setChannelProfile:TTTRtc_ChannelProfile_Communication];
     [TTManager.rtcEngine muteLocalAudioStream:NO];
-    [TTManager.rtcEngine enableAudioVolumeIndication:1000 smooth:3];
+    [TTManager.rtcEngine enableAudioVolumeIndication:200 smooth:3];
     [TTManager.rtcEngine setEnableSpeakerphone:YES];
     //设置为高音质
     if (TTManager.isHighQualityAudio) {
