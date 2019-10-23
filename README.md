@@ -1,4 +1,4 @@
-### 音频通话-OC
+### 音频通话
 
 **TTTAudioChat**是Swift演示demo  **TTTAudioChat-OC**是OC演示demo 
 
