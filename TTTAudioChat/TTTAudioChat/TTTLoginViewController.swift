@@ -44,7 +44,7 @@ class TTTLoginViewController: UIViewController {
         TTManager.rtcEngine.delegate = self
         TTManager.rtcEngine.setChannelProfile(.channelProfile_Communication)
         TTManager.rtcEngine.muteLocalAudioStream(false)
-        TTManager.rtcEngine.enableAudioVolumeIndication(200, smooth: 3)
+        TTManager.rtcEngine.enableAudioVolumeIndication(1000, smooth: 3)
         //设置为高音质
         if TTManager.isHighQualityAudio {
             TTManager.rtcEngine.setPrefer(.audioCodec_AAC, bitrate: 96, channels: 1);

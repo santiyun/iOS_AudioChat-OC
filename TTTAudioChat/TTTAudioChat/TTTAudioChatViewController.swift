@@ -40,8 +40,6 @@ class TTTAudioChatViewController: UIViewController {
     
     @IBAction private func speakerAction(_ sender: UIButton) {
         TTManager.rtcEngine.setEnableSpeakerphone(sender.isSelected)
-//        TTManager.rtcEngine.stopAudioPlayAndRecord(!sender.isSelected)
-//        TTManager.rtcEngine.muteAllRemoteAudioStreams(!sender.isSelected)
         sender.isSelected = !sender.isSelected
     }
     

@@ -44,6 +44,7 @@
     [TTManager.rtcEngine setChannelProfile:TTTRtc_ChannelProfile_Communication];
     [TTManager.rtcEngine muteLocalAudioStream:NO];
     [TTManager.rtcEngine enableAudioVolumeIndication:200 smooth:3];
+    [TTManager.rtcEngine setEnableSpeakerphone:YES];
     //设置为高音质
     if (TTManager.isHighQualityAudio) {
         [TTManager.rtcEngine setPreferAudioCodec:TTTRtc_AudioCodec_AAC bitrate:96 channels:1];

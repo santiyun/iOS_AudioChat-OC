@@ -110,12 +110,12 @@
 				9BCB135A21479BE300DD0724 /* Settings */,
 				9B57CA502121871000FF9F6E /* AppDelegate.h */,
 				9B57CA512121871000FF9F6E /* AppDelegate.m */,
+				9B57CA66212187FC00FF9F6E /* TTTRtcManager.h */,
+				9B57CA67212187FC00FF9F6E /* TTTRtcManager.m */,
 				9B1E5F4C21227DF900505634 /* TTTLoginViewController.h */,
 				9B1E5F4D21227DF900505634 /* TTTLoginViewController.m */,
 				9B1E5F4F21227E0400505634 /* TTTAudioChatViewController.h */,
 				9B1E5F5021227E0400505634 /* TTTAudioChatViewController.m */,
-				9B57CA66212187FC00FF9F6E /* TTTRtcManager.h */,
-				9B57CA67212187FC00FF9F6E /* TTTRtcManager.m */,
 				9B1E5F5221227E9300505634 /* TTTAVRegion.h */,
 				9B1E5F5321227E9300505634 /* TTTAVRegion.m */,
 				9B1E5F5521227EAF00505634 /* TTTAVRegion.xib */,
@@ -393,7 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1021;
+				CURRENT_PROJECT_VERSION = 0229;
 				DEVELOPMENT_TEAM = 7XP66VHL84;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../TTTLib";
@@ -404,7 +404,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4.0;
+				MARKETING_VERSION = 2.7.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					TTTPlayerKit,
@@ -422,7 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1021;
+				CURRENT_PROJECT_VERSION = 0229;
 				DEVELOPMENT_TEAM = 7XP66VHL84;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../TTTLib";
@@ -433,7 +433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4.0;
+				MARKETING_VERSION = 2.7.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					TTTPlayerKit,
